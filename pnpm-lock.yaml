@@ -143,8 +143,8 @@ importers:
         specifier: ^1.12.1
         version: 1.29.0(zod@4.4.3)
       '@theyahia/mcp-core':
-        specifier: workspace:*
-        version: link:../../packages/core
+        specifier: https://github.com/coder8080/WWmcp/releases/download/aprovodka-v4.4.0-coder8080.1/theyahia-mcp-core-1.1.1-coder8080.1.tgz
+        version: https://github.com/coder8080/WWmcp/releases/download/aprovodka-v4.4.0-coder8080.1/theyahia-mcp-core-1.1.1-coder8080.1.tgz(express@5.2.1)
       zod:
         specifier: ^4.4.3
         version: 4.4.3
@@ -2048,6 +2048,16 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
+  '@theyahia/mcp-core@https://github.com/coder8080/WWmcp/releases/download/aprovodka-v4.4.0-coder8080.1/theyahia-mcp-core-1.1.1-coder8080.1.tgz':
+    resolution: {tarball: https://github.com/coder8080/WWmcp/releases/download/aprovodka-v4.4.0-coder8080.1/theyahia-mcp-core-1.1.1-coder8080.1.tgz}
+    version: 1.1.1-coder8080.1
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      express: ^5.2.1
+    peerDependenciesMeta:
+      express:
+        optional: true
+
   '@turbo/darwin-64@2.9.12':
     resolution: {integrity: sha512-eu3eFRmE9NjgZ0wPdRJ44l+LGSeIky+tz5ZQd8zQkw/Yqi+BM7wq+8nbabeoiVUcICi/IZweMOKl/MCmkrd1+g==}
     cpu: [x64]
@@ -2549,6 +2559,7 @@ packages:
   eslint@9.39.5:
     resolution: {integrity: sha512-DgZS62aPLXKlnxILS/AYCoRvHaZeXceIzlXPkkGGzJWSow1aEk0lbTlxUSlyjC8jcaKxAdOnTDz+o1JFSBsyjw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -4440,6 +4451,16 @@ snapshots:
   '@sinclair/typebox@0.27.10': {}
 
   '@standard-schema/spec@1.1.0': {}
+
+  '@theyahia/mcp-core@https://github.com/coder8080/WWmcp/releases/download/aprovodka-v4.4.0-coder8080.1/theyahia-mcp-core-1.1.1-coder8080.1.tgz(express@5.2.1)':
+    dependencies:
+      '@modelcontextprotocol/sdk': 1.29.0(zod@4.4.3)
+      zod: 4.4.3
+    optionalDependencies:
+      express: 5.2.1
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - supports-color
 
   '@turbo/darwin-64@2.9.12':
     optional: true

@@ -1,6 +1,6 @@
 {
   "name": "@theyahia/aprovodka",
-  "version": "4.3.0",
+  "version": "4.4.0-coder8080.1",
   "description": "1C:Enterprise (1С:Предприятие) for AI agents: read and post documents, catalog CRUD, accounting and accumulation balances, OData queries (34 tools, Russia)",
   "type": "module",
   "main": "dist/index.js",
@@ -26,7 +26,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@theyahia/mcp-core": "workspace:*",
+    "@theyahia/mcp-core": "https://github.com/coder8080/WWmcp/releases/download/aprovodka-v4.4.0-coder8080.1/theyahia-mcp-core-1.1.1-coder8080.1.tgz",
     "@modelcontextprotocol/sdk": "^1.12.1",
     "zod": "^4.4.3"
   },
